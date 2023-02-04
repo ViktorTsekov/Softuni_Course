@@ -27,11 +27,7 @@ function trekkingMania(input) {
     totalNumberOfClimbers += n
   })
 
-  console.log((hillsInfo.Musala / totalNumberOfClimbers * 100).toFixed(2) + "%")
-  console.log((hillsInfo.Monblan / totalNumberOfClimbers * 100).toFixed(2) + "%")
-  console.log((hillsInfo.Cilimandjaro / totalNumberOfClimbers * 100).toFixed(2) + "%")
-  console.log((hillsInfo.K2 / totalNumberOfClimbers * 100).toFixed(2) + "%")
-  console.log((hillsInfo.Everest / totalNumberOfClimbers * 100).toFixed(2) + "%")
+  Object.keys(hillsInfo).forEach(key => console.log((hillsInfo[key] / totalNumberOfClimbers * 100).toFixed(2) + "%"))
 }
 
 trekkingMania(["5", "25", "41", "31", "250", "6"])
