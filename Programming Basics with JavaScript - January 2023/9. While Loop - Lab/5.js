@@ -8,6 +8,7 @@ function accountBalance(input) {
     if(!isNaN(cur)) {
       if(cur < 0) {
         console.log("Invalid operation!")
+        break
       } else {
         sum += cur
         console.log("Increase:", cur.toFixed(2))
@@ -20,4 +21,4 @@ function accountBalance(input) {
   console.log("Total:", sum.toFixed(2))
 }
 
-accountBalance(["5.51", "69.42", "a", "NoMoreMoney", "100", "NoMoreMoney"])
+accountBalance(["5.51", "69.42", "-1", "a", "NoMoreMoney", "-100", "NoMoreMoney"])
