@@ -1,4 +1,9 @@
-function orbit(n, m, x, y) {
+function orbit(input) {
+  let n = input[0]
+  let m = input[1]
+  let x = input[2]
+  let y = input[3]
+
   let matrix = Array(n).fill(0).map(() => Array(m).fill(0))
   let xStartingPoint = x
   let xEndPoint = x
@@ -38,4 +43,4 @@ function orbit(n, m, x, y) {
   }
 }
 
-orbit(5, 5, 2, 2)
+orbit([5, 6, 2, 2])
