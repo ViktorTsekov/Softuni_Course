@@ -1,5 +1,4 @@
-// Here the definitions for x and y coordinates have been swapped as we are iterating the matrix column first and row latter, 
-// rather than the traditional way of row first and column latter.
+// Here the definitions for x and y coordinates have been swapped as we are iterating the matrix column first and row latter, rather than the traditional way of row first and column latter.
 // This is required by condition!
 function rosettaStone(input) {
   let yTemplateLength = Number(input[0])
